@@ -126,6 +126,7 @@ const Main = () => {
                 <Route exact path="/punches" render ={props =>  isAuth  ? (<page.Punches {...props}  setAuth={setAuth} />) : (<Redirect to ="/login" />) }/>
                 <Route exact path="/schedule" render ={props => isAuth  ? (<page.Schedule {...props}  setAuth={setAuth} />) : (<Redirect to ="/login" />) }/>
                 <Route exact path="/addUser" render ={props => isAuth  ? (<page.AddUser {...props}  setAuth={setAuth} />) : (<Redirect to ="/login" />) }/>
+                <Route exact path="/addSchedule" render ={props => isAuth  ? (<page.AddUser {...props}  setAuth={setAuth} />) : (<Redirect to ="/login" />) }/>
             </Switch>
            )}
         </Router>

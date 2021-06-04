@@ -60,7 +60,7 @@ export default function ControlledOpenSelect() {
         let data = await api.postPunch(body);
         let alert = data.data
         toast.success(alert)
-        console.log(data); 
+        //console.log(data); 
 
     };
     //Punch Fuction
